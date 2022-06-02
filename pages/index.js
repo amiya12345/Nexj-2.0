@@ -1,10 +1,9 @@
-import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Main from "../components/Main";
 
 export default function Home() {
   return (
-    <div>
+    <div className="h-screen w-screen flex">
       <Navbar />
       <Main />
     </div>

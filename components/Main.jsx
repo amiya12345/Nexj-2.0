@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
 const Spline = dynamic(() => import("@splinetool/react-spline"), {
-  ssr: false,
+  ssr: false
 });
 
 const Main = () => {
   return (
-    <section name="home" className="max-h-[80rem] max-w-full relative">
+    <section name="home" className="flex-1 flex relative w-full">
       <motion.div
         className="flex flex-col justify-center items-center absolute z-5 top-[50%] w-[100%]"
         initial={{ opacity: 0, y: 0 }}
@@ -25,7 +25,7 @@ const Main = () => {
               "Namaste!",
               "Bonjour!",
               "Ciao!",
-              "Konnichiwa!",
+              "Konnichiwa!"
             ]}
             typeSpeed={80}
             backSpeed={80}
@@ -37,13 +37,11 @@ const Main = () => {
           Amiya Ranjan
         </h1>
         <p className="lg:text-[24px] font-semibold py-3  max-w-3xl mx-auto text-nft lg:tracking-[8px] sm:text-[16px tracking-[4px]">
-          3D Generalist | NFT Geek{" "}
+          3D Generalist | NFT Geek
         </p>
       </motion.div>
-      <div className="max-h-[80rem] mt-0 mb-auto ml-auto mr-auto overflow-hidden">
-        <div className="w-full h-full flex">
-          <Spline scene="https://draft.spline.design/TUzOCtxP59E5CxOg/scene.spline" />
-        </div>
+      <div className="flex-1">
+        <Spline scene="https://draft.spline.design/TUzOCtxP59E5CxOg/scene.spline" />
       </div>
     </section>
   );
