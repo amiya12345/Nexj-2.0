@@ -11,7 +11,7 @@ const Main = () => {
   return (
     <section name="home" className="flex-1 flex relative w-full">
       <motion.div
-        className="flex flex-col justify-center items-center absolute z-5 top-[50%] w-[100%]"
+        className="flex flex-col justify-center items-center absolute z-5 top-1/2 w-full"
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: -10 }}
         transition={{ delay: 1, duration: 2.5, type: "spring" }}
