@@ -15,7 +15,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="ml-10 hover:text-sky-500">
-          <Link href="/" smooth={true} offset={0} duration={500}>
+          <Link href="works" smooth={true} offset={0} duration={500}>
             Works
           </Link>
         </li>
