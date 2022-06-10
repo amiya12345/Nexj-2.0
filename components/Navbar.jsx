@@ -15,7 +15,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="ml-10 hover:text-sky-500">
-          <Link href="works" smooth={true} offset={0} duration={500}>
+          <Link href="/#works" smooth={true} offset={0} duration={500}>
             Works
           </Link>
         </li>
@@ -45,7 +45,7 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-omio flex flex-col justify-center items-center font-omiofont3"
         }
       >
-        <li className="py-3 text-2xl">
+        <li  onClick={() => setNav(false)} className="py-3 text-2xl">
           <Link
             href="/"
             onClick={handleClick}
@@ -56,7 +56,7 @@ const Navbar = () => {
             Home
           </Link>
         </li>
-        <li className="py-3 text-2xl">
+        <li  onClick={() => setNav(false)}  className="py-3 text-2xl">
           <Link
             href="/"
             onClick={handleClick}
@@ -67,7 +67,7 @@ const Navbar = () => {
             Works
           </Link>
         </li>
-        <li className="py-3 text-2xl">
+        <li onClick={() => setNav(false)}  className="py-3 text-2xl">
           <Link
             href="/"
             onClick={handleClick}
@@ -78,7 +78,7 @@ const Navbar = () => {
             About
           </Link>
         </li>
-        <li className="py-3 text-2xl">
+        <li  onClick={() => setNav(false)}  className="py-3 text-2xl">
           <a
             href="https://nft.wazirx.org/amiya_fury/created?sort=created-desc"
             target="_blank"

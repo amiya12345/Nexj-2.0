@@ -15,22 +15,22 @@ const Projects = () => {
           <WorksItem
             title="3D illustrataion"
             backgroundImg={Webi}
-            projectUrl="/property"
+            projectUrl="/web"
           />
           <WorksItem
             title="Ether Portal"
             backgroundImg={Ethp}
-            projectUrl="/crypto"
+            projectUrl="/eth"
           />
           <WorksItem
             title="Abstarcto"
             backgroundImg={Abstarcto}
-            projectUrl="/netflix"
+            projectUrl="/abstarct"
           />
           <WorksItem
             title="Typo"
             backgroundImg={Type}
-            projectUrl="/twitch"
+            projectUrl="/typo"
           />
         </div>
       </div>
