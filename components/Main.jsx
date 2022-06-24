@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
 const Spline = dynamic(() => import("@splinetool/react-spline"), {
-  ssr: false
+  ssr: false,
 });
 
 const Main = () => {
@@ -25,7 +25,7 @@ const Main = () => {
               "Namaste!",
               "Bonjour!",
               "Ciao!",
-              "Konnichiwa!"
+              "Konnichiwa!",
             ]}
             typeSpeed={80}
             backSpeed={80}
