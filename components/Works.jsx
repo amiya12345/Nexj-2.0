@@ -1,11 +1,10 @@
-
 import React from "react";
 import Ethp from "../public/assets/works/Ethp.webp";
 import Type from "../public/assets/works/type.webp";
 import Abstarcto from "../public/assets/works/Abstarcto.webp";
 import Webi from "../public/assets/works/webi.webp";
+import Cybr from "../public/assets/works/cyber.webp";
 import WorksItem from "./Worksitem";
-
 
 const Projects = () => {
   return (
@@ -27,10 +26,20 @@ const Projects = () => {
             backgroundImg={Abstarcto}
             projectUrl="/abstarct"
           />
+          <WorksItem 
+          title="Typo" 
+          backgroundImg={Type} 
+          projectUrl="/typo" 
+          />
           <WorksItem
-            title="Typo"
-            backgroundImg={Type}
-            projectUrl="/typo"
+            title="Cyberpunk"
+            backgroundImg={Cybr}
+            projectUrl="/cyber"
+          />
+          <WorksItem
+            title="Cyberpunk"
+            backgroundImg={Cybr}
+            projectUrl="/cyber"
           />
         </div>
       </div>

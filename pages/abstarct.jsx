@@ -12,6 +12,7 @@ const abstarct = () => {
         className="absolute z-1"
         layout="fill"
         objectFit="cover"
+        quality="100"
         src={Abx}
         alt="/"
       />
