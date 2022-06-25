@@ -6,12 +6,13 @@ const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
   return (
     <Link href={projectUrl}>
       <div className="w-full">
-        <div className="max-w-full mx-auto px-2">
-          <div className="relative flex items-center justify-center h-[100%] w-full shadow-xl rounded-xl p-4 group  hover:bg-sky-500 transition duration-700">
+        <div className="max-w-full mx-auto">
+          <div className="relative flex items-center justify-center h-[100%] w-full shadow-xl rounded-xl group hover:bg-sky-500 transition duration-700">
             <Image
               className="rounded-xl group-hover:opacity-10 cursor-pointer"
               src={backgroundImg}
               alt="/"
+              
             />
             <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
               <h3 className="text-2xl text-white tracking-wider text-center">

@@ -9,17 +9,19 @@ import WorksItem from "./Worksitem";
 const Projects = () => {
   return (
     <div id="works" className="w-full font-omiofont2">
-      <div className="mx-auto px-2 py-16">
-        <div className="grid gap-4 ml-4 mr-4 md:grid-cols-2 md:gap-2 ">
+      <div className="mx-auto py-16">
+        <div className="grid lg:gap-12 lg:mx-12 md:grid-cols-2 gap-4 mx-4">
           <WorksItem
             title="3D illustrataion"
             backgroundImg={Webi}
             projectUrl="/web"
+            data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="0" data-aos-duration="1000" data-aos-delay="0"
           />
           <WorksItem
             title="Ether Portal"
             backgroundImg={Ethp}
             projectUrl="/eth"
+            
           />
           <WorksItem
             title="Abstarcto"
