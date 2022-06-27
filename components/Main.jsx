@@ -1,5 +1,6 @@
 import React from "react";
 import Typed from "react-typed";
+import 'react-typed/dist/animatedCursor.css';
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 

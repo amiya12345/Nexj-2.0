@@ -16,12 +16,10 @@
 
 #__next {
   margin: 0;
-  width: 100%;
-  height: 100%;
+  padding: 0;
+ 
 }
-.divv{
-  aspect-ratio: 16/9;
-}
+
 
 html {
   scroll-behavior: smooth;
