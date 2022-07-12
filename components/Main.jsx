@@ -1,6 +1,6 @@
 import React from "react";
 import Typed from "react-typed";
-import 'react-typed/dist/animatedCursor.css';
+import "react-typed/dist/animatedCursor.css";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
@@ -42,7 +42,7 @@ const Main = () => {
         </p>
       </motion.div>
       <div className="flex-1">
-        <Spline scene="https://draft.spline.design/Bqcz5OCkdLV5dxbD/scene.splinecode" />
+        <Spline scene="https://draft.spline.design/d4t8JvlnRKL0n10Y/scene.splinecode" />
       </div>
     </section>
   );

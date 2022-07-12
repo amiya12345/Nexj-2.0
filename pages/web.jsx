@@ -1,31 +1,37 @@
 import Image from "next/image";
 import React from "react";
 import Webi from "../public/assets/works/webi.webp";
+import Webii from "../public/assets/works/webi1.webp";
+import Webiii from "../public/assets/works/webii.webp";
+import Webiv from "../public/assets/works/webi12.webp";
 import Link from "next/link";
 import Hover from "react-3d-hover";
+import Navbar from "../components/Navbar";
 
 const web = () => {
   return (
+    
     <div className="w-full max-h-screen">
-    <div className="w-screen h-[30vh] lg:h-[40vh] relative">
-      <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
-      <Image
-        className="absolute z-1"
-        layout="fill"
-        objectFit="cover"
-        src={Webi}
-        alt="/"
-      />
-      <div className="absolute top-[70%] max-w-[100%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 lg:mx-24 mx-0">
-        <h2 className="font-omiofont2 text-3xl">3D illustrataion</h2>
-        <h3 className="font-omiofont2 text-1.5xl">Blender / 3D UI</h3>
-        <h3>Personal Project</h3>
+        <Navbar />
+      <div className="w-screen h-[30vh] lg:h-[40vh] relative">
+        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
+        <Image
+          className="absolute z-1"
+          layout="fill"
+          objectFit="cover"
+          src={Webi}
+          alt="/"
+        />
+        <div className="absolute top-[70%] max-w-[100%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 lg:mx-24 mx-0">
+          <h2 className="font-omiofont2 text-3xl">3D illustrataion</h2>
+          <h3 className="font-omiofont2 text-1.5xl">Blender / 3D UI</h3>
+          <h3>Personal Project</h3>
+        </div>
       </div>
-    </div>
 
       <div className="max-w-[100%] lg:mx-24  grid md:grid-cols-5 gap-8 pt-8 mx-4">
         <div className="col-span-6">
-          <h2 className="lg:text-3xl font-omiofont1 text-xl">
+          <h2 className="lg:text-3xl font-omiofont2 text-xl">
             Project Overview
           </h2>
           <p className="font-omiofont3 lg:mt-8 text-justify text-slate-500 mt-6">
@@ -45,7 +51,62 @@ const web = () => {
           <Hover scale={1.03} perspective={1000} speed={500}>
             <Image
               className="rounded"
+              src={Webii}
+              alt="/"
+              quality="100"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+              data-aos-delay="0"
+            />
+          </Hover>
+          <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
+            <Image
+              className="rounded"
               src={Webi}
+              alt="/"
+              quality="100"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+              data-aos-delay="0"
+            />
+          </Hover>
+          <Hover scale={1.03} perspective={1000} speed={500}>
+            <Image
+              className="rounded"
+              src={Webiv}
+              alt="/"
+              quality="100"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+              data-aos-delay="0"
+            />
+          </Hover>
+          <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
+            <Image
+              className="rounded"
+              src={Webiii}
+              alt="/"
+              quality="100"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+              data-aos-delay="0"
+            />
+          </Hover>
+          <Hover
+            scale={1.03}
+            perspective={1000}
+            speed={500}
+          >
+            <Image
+              src={Webiv}
               alt="/"
               quality="100"
               data-aos="fade-up"
@@ -84,7 +145,7 @@ const web = () => {
           <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
             <Image
               className="rounded"
-              src={Webi}
+              src={Webii}
               alt="/"
               quality="100"
               data-aos="fade-up"

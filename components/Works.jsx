@@ -9,8 +9,8 @@ import WorksItem from "./Worksitem";
 const Projects = () => {
   return (
     <div id="works" className="w-full font-omiofont2">
-      <div className="lg:mx-14 py-16 mx-4">
-        <div className="grid lg:gap-12 md:grid-cols-2 gap-4">
+      <div className=" py-16 ">
+        <div className="grid md:grid-cols-2">
           <WorksItem
             title="3D illustrataion"
             backgroundImg={Webi}
