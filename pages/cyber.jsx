@@ -5,10 +5,12 @@ import Cybri from "../public/assets/works/cyber1.webp";
 import Link from "next/link";
 import Hover from "react-3d-hover";
 import Tilt from "../components/Tilt";
+import Navbar from "../components/Navbar";
 
 const cyber = () => {
   return (
     <div className="w-full max-h-screen">
+       <Navbar />
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
         <Image

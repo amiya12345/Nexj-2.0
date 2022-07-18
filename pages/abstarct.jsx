@@ -3,9 +3,11 @@ import React from "react";
 import Abx from "../public/assets/works/Abstarcto.webp";
 import Link from "next/link";
 import Hover from "react-3d-hover";
+import Navbar from "../components/Navbar";
 const abstarct = () => {
   return (
     <div className="w-full max-h-screen">
+       <Navbar />
     <div className="w-screen h-[30vh] lg:h-[40vh] relative">
       <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
       <Image
