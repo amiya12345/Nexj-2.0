@@ -35,7 +35,7 @@ const Navbar = () => {
       }
     >
       <div
-        style={{ backgroundColor: `${color}` }}
+        style={{ color: `${textColor}` }}
         className="text-[16px] font-omiofont3"
       >
         AR.
