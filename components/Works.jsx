@@ -4,6 +4,7 @@ import Type from "../public/assets/works/type.webp";
 import Abstarcto from "../public/assets/works/Abstarcto.webp";
 import Webi from "../public/assets/works/webi.webp";
 import Cybr from "../public/assets/works/cyber.webp";
+import Rario from "../public/assets/works/Rario.webp"
 import WorksItem from "./Worksitem";
 
 const Projects = () => {
@@ -12,14 +13,14 @@ const Projects = () => {
       <div className=" py-16 ">
         <div className="grid md:grid-cols-2">
           <WorksItem
-            title="3D illustrataion"
-            backgroundImg={Webi}
+            title="Rario"
+            backgroundImg={Rario}
             projectUrl="/web"
           />
           <WorksItem
-            title="Ether Portal"
-            backgroundImg={Ethp}
-            projectUrl="/eth"
+            title="3D illustartion"
+            backgroundImg={Webi}
+            projectUrl="/web"
           />
           <WorksItem
             title="Abstarcto"
@@ -28,9 +29,9 @@ const Projects = () => {
           />
           <WorksItem title="Typo" backgroundImg={Type} projectUrl="/typo" />
           <WorksItem
-            title="Cyberpunk"
-            backgroundImg={Cybr}
-            projectUrl="/cyber"
+            title="Eth Portal"
+            backgroundImg={Ethp}
+            projectUrl="/eth"
           />
           <WorksItem
             title="Cyberpunk"

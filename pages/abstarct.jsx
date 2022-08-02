@@ -2,27 +2,27 @@ import Image from "next/image";
 import React from "react";
 import Abx from "../public/assets/works/Abstarcto.webp";
 import Link from "next/link";
-import Hover from "react-3d-hover";
+import Tilt from "react-tilt";
 import Navbar from "../components/Navbar";
 const abstarct = () => {
   return (
     <div className="w-full max-h-screen">
-       <Navbar />
-    <div className="w-screen h-[30vh] lg:h-[40vh] relative">
-      <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
-      <Image
-        className="absolute z-1"
-        layout="fill"
-        objectFit="cover"
-        src={Abx}
-        alt="/"
-      />
-      <div className="absolute top-[70%] max-w-[100%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 lg:mx-24 mx-0">
-        <h2 className="font-omiofont2 text-3xl">3D illustrataion</h2>
-        <h3 className="font-omiofont2 text-1.5xl">Blender / 3D UI</h3>
-        <h3>Personal Project</h3>
+      <Navbar />
+      <div className="w-screen h-[30vh] lg:h-[40vh] relative">
+        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
+        <Image
+          className="absolute z-1"
+          layout="fill"
+          objectFit="cover"
+          src={Abx}
+          alt="/"
+        />
+        <div className="absolute top-[70%] max-w-[100%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 lg:mx-24 mx-0">
+          <h2 className="font-omiofont2 text-3xl">3D illustrataion</h2>
+          <h3 className="font-omiofont2 text-1.5xl">Blender / 3D UI</h3>
+          <h3>Personal Project</h3>
+        </div>
       </div>
-    </div>
 
       <div className="max-w-[100%] lg:mx-24  grid md:grid-cols-5 gap-8 pt-8 mx-4">
         <div className="col-span-6">
@@ -43,7 +43,17 @@ const abstarct = () => {
       </div>
       <div className="max-w-[100%] lg:mx-24 mt-8 mx-4">
         <div className="grid lg:gap-12 md:grid-cols-2 gap-4">
-          <Hover scale={1.03} perspective={1000} speed={500}>
+          <Tilt
+            className="Tilt"
+            options={{
+              max: 10,
+              scale: 1,
+              axis: null,
+              perspective: 1000,
+              transition: true,
+              easing: "cubic-bezier(.03,.98,.52,.99)",
+            }}
+          >
             <Image
               className="rounded"
               src={Abx}
@@ -55,8 +65,18 @@ const abstarct = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover>
-          <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
+          </Tilt>
+          <Tilt
+            className="Tilt"
+            options={{
+              max: 10,
+              scale: 1,
+              axis: null,
+              perspective: 1000,
+              transition: true,
+              easing: "cubic-bezier(.03,.98,.52,.99)",
+            }}
+          >
             <Image
               className="rounded"
               src={Abx}
@@ -68,8 +88,18 @@ const abstarct = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover>
-          <Hover scale={1.03} perspective={1000} speed={500}>
+          </Tilt>
+          <Tilt
+            className="Tilt"
+            options={{
+              max: 10,
+              scale: 1,
+              axis: null,
+              perspective: 1000,
+              transition: true,
+              easing: "cubic-bezier(.03,.98,.52,.99)",
+            }}
+          >
             <Image
               className="rounded"
               src={Abx}
@@ -81,8 +111,18 @@ const abstarct = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover>
-          <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
+          </Tilt>
+          <Tilt
+            className="Tilt"
+            options={{
+              max: 10,
+              scale: 1,
+              axis: null,
+              perspective: 1000,
+              transition: true,
+              easing: "cubic-bezier(.03,.98,.52,.99)",
+            }}
+          >
             <Image
               className="rounded"
               src={Abx}
@@ -94,7 +134,7 @@ const abstarct = () => {
               data-aos-duration="1000"
               data-aos-delay="0"
             />
-          </Hover>
+          </Tilt>
         </div>
       </div>
       <div className="max-w-[100%] lg:mx-24">
@@ -106,4 +146,4 @@ const abstarct = () => {
   );
 };
 
-export default abstarct
+export default abstarct;

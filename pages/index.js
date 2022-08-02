@@ -3,6 +3,7 @@ import Main from "../components/Main";
 import Works from "../components/Works";
 import About from "../components/About";
 import Head from "next/head";
+import Experiment from "../components/Experiment";
 
 export default function Home() {
   return (
@@ -20,7 +21,8 @@ export default function Home() {
         <Navbar />
         <Main />
         <Works />
-        <About />
+        <Experiment/>
+        
       </div>
     </>
   );

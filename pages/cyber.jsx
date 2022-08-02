@@ -3,14 +3,13 @@ import React from "react";
 import Cybr from "../public/assets/works/cyber.webp";
 import Cybri from "../public/assets/works/cyber1.webp";
 import Link from "next/link";
-import Hover from "react-3d-hover";
-import Tilt from "../components/Tilt";
+import Overlay from "../components/Overlay";
 import Navbar from "../components/Navbar";
-
+import Tilt from "react-tilt";
 const cyber = () => {
   return (
     <div className="w-full max-h-screen">
-       <Navbar />
+      <Navbar />
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
         <Image
@@ -72,38 +71,78 @@ const cyber = () => {
       </div>
       <div className="max-w-[100%] lg:mx-24 mt-8 mx-4">
         <div className="grid lg:gap-12 md:grid-cols-2 gap-4">
-          <Hover scale={1.03} perspective={1000} speed={500}>
-            <Tilt
+          <Tilt
+            className="Tilt"
+            options={{
+              max: 10,
+              scale: 1,
+              axis: null,
+              perspective: 1000,
+              transition: true,
+              easing: "cubic-bezier(.03,.98,.52,.99)",
+            }}
+          >
+            <Overlay
               title="3D illustrataion"
               backgroundImg={Cybri}
               des="Before adding material to the scene"
               quality="100"
             />
-          </Hover>
-          <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
-            <Tilt
+          </Tilt>
+          <Tilt
+            className="Tilt"
+            options={{
+              max: 10,
+              scale: 1,
+              axis: null,
+              perspective: 1000,
+              transition: true,
+              easing: "cubic-bezier(.03,.98,.52,.99)",
+            }}
+          >
+            <Overlay
               title="3D illustrataion"
               backgroundImg={Cybri}
               des="Before adding material to the scene"
               quality="100"
             />
-          </Hover>
-          <Hover scale={1.03} perspective={1000} speed={500}>
-            <Tilt
+          </Tilt>
+          <Tilt
+            className="Tilt"
+            options={{
+              max: 10,
+              scale: 1,
+              axis: null,
+              perspective: 1000,
+              transition: true,
+              easing: "cubic-bezier(.03,.98,.52,.99)",
+            }}
+          >
+            <Overlay
               title="3D illustrataion"
               backgroundImg={Cybri}
               des="Before adding material to the scene"
               quality="100"
             />
-          </Hover>
-          <Hover scale={1.03} perspective={1000} speed={500} data-aos="fade-up">
-            <Tilt
+          </Tilt>
+          <Tilt
+            className="Tilt"
+            options={{
+              max: 10,
+              scale: 1,
+              axis: null,
+              perspective: 1000,
+              transition: true,
+              easing: "cubic-bezier(.03,.98,.52,.99)",
+            }}
+          >
+            <Overlay
               title="3D illustrataion"
               backgroundImg={Cybri}
               des="Before adding material to the scene"
               quality="100"
             />
-          </Hover>
+          </Tilt>
         </div>
       </div>
       <div className="max-w-[100%] lg:mx-24">
