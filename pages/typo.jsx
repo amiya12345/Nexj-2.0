@@ -18,10 +18,10 @@ const typo = () => {
           src={Type}
           alt="/"
         />
-        <div className="absolute top-[70%] max-w-[100%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 lg:mx-24 mx-0">
-          <h2 className="font-omiofont2 text-3xl">3D illustrataion</h2>
-          <h3 className="font-omiofont2 text-1.5xl">Blender / 3D UI</h3>
-          <h3>Personal Project</h3>
+         <div className="absolute top-[70%] max-w-[100%] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10  mx-0">
+          <h2 className="font-omiofont2 text-3xl lg:mx-24 mx-4">3D illustrataion</h2>
+          <h3 className="font-omiofont2 text-1.5xl lg:mx-24 mx-4 ">Blender / 3D UI</h3>
+          <h3 className="lg:mx-24 mx-4">Personal Project</h3>
         </div>
       </div>
 

@@ -26,7 +26,6 @@ const Main = () => {
               "Namaste!",
               "Bonjour!",
               "Ciao!",
-              "Konnichiwa!",
             ]}
             typeSpeed={80}
             backSpeed={80}
@@ -42,7 +41,7 @@ const Main = () => {
         </p>
       </motion.div>
       <div className="flex-1">
-        <Spline scene="https://draft.spline.design/d4t8JvlnRKL0n10Y/scene.splinecode" />
+        <Spline scene="https://draft.spline.design/BUvmPL0MpFdDAjqJ/scene.splinecode" />
       </div>
     </section>
   );
